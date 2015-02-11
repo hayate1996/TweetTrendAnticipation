@@ -1,0 +1,19 @@
+#graph #innerContent {
+	margin: 0 auto;
+	width: 96%;
+	height: 96%;
+	border-radius: 10px;
+	background-color: white;
+}
+
+#graph {
+	width: 100%;
+	height: 500px;
+	background-color: #eeeeee;
+	padding-top: 2%;
+}
+#word {
+	border-top: 1px solid #cccccc;
+	width: 100%;
+	height: 200px;
+}
