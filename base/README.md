@@ -1,10 +1,10 @@
 ##How to use
 ```sh
 $ cd repos/base
-$ php -S localhost:8888
+$ node node/server.js
 ```
 
-*Open 'http://localhost:8888/html/index.html' on browser*
+*Open 'http://127.0.0.1:6789/html/index.html' on browser*
 
 ##Data
 - There are datas in repos/data/flare.json
