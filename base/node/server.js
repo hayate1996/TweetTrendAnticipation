@@ -17,6 +17,7 @@ server.on('request', function(req, res){
       res.writeHead('404', {'Content-Type' : 'text/plain'})
       res.write("not found");
       console.log("not found. [" + path + "]");
+      console.log("error - " + err);
       res.end();
       return;
     }
