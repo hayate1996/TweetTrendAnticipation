@@ -12,7 +12,8 @@ window.onload = function(){
 
   fileName = [
     "../data/flare_0.json",
-    "../data/flare_1.json"
+    "../data/flare_1.json",
+    "../data/flare_2.json"
   ];
 
   fileNumber = 0;
@@ -27,6 +28,9 @@ function changeGraph(number) {
       break;
     case "2":
       fileNumber = 1;
+      break;
+    case "3":
+      fileNumber = 2;
       break;
     default:
       return;
