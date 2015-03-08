@@ -43,6 +43,6 @@ t_map = t_map.sort_by {|k, v| v}
 
  File.open('flare_7.json', 'w'){|f|
    t_map.each do |word, count|
-     f.write JSON.pretty_generate({"name" => "#{word}", "size" => count*120}(','))
+     f.write JSON.pretty_generate({"name" => "#{word}", "size" => count*120}
   end
   }
