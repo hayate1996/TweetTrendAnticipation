@@ -10,13 +10,11 @@ require 'fileutils'
 
 
 
-
-
 TweetStream.configure do |config|
-  config.consumer_key = 'BGTuRGTfFnUUxSarSswhA',
-  config.consumer_secret = '91sjht13HbtMNf8RJvyX7ia00Z9LmOsMxEF7o8wSC0',
-  config.oauth_token = '600384789-pv9ORfn1v3NT182o6JGwVVXfuC9Cu0mW37amGoT7',
-  config.oauth_token_secret = 'XKxNJYx2xyjfPX2BBCshWV0UQGBxO0itmn8zNEzXWxHFP',
+  config.consumer_key = '************',
+  config.consumer_secret = '************',
+  config.oauth_token = '************',
+  config.oauth_token_secret = '************',
   config.auth_method = :oauth
 end
 
@@ -27,7 +25,6 @@ client.on_inited do
 end
 
 nm = Natto::MeCab.new
-
 t_map = {}
 
 @statuses = []
@@ -46,6 +43,6 @@ t_map = t_map.sort_by {|k, v| v}
 
  File.open('flare_7.json', 'w'){|f|
    t_map.each do |word, count|
-     f.write JSON.pretty_generate({"name" => "#{word}", "size" => count*120.}.join(','))
+     f.write JSON.pretty_generate({"name" => "#{word}", "size" => count*120}(','))
   end
   }
